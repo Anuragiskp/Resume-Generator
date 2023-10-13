@@ -12,3 +12,19 @@
 .links{
     color: white;
 }
+
+.input{
+    padding-left: 7em;
+}
+
+.input2{
+    padding-left: 4em;
+}
+
+#cv-form{
+    /* display: none; */
+}
+
+#cv-template{
+    display: none;
+}

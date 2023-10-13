@@ -1,4 +1,4 @@
-<html lang="en">
+<!DOCTYPE html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -41,17 +41,17 @@
 
                 <p class="Social-media mt-5">Link your social media!</p>
                 <div class="form-group">
-                    <label for="EAddress">Link your Email Address: </label>
-                    <input type="text" id="EAddress" placeholder="Enter here" class="form-control">
+                    <label for="Eaddress">Link your Email Address: </label>
+                    <input type="text" id="Eaddress" placeholder="Enter here" class="form-control">
                 </div>
 
                 <div class="form-group">
-                    <label for="LinkedIn">Link your Linkedin: </label>
+                    <label for="LAddress">Link your Linkedin: </label>
                     <input type="text" id="LAddress" placeholder="Enter here" class="form-control">
                 </div>
 
                 <div class="form-group">
-                    <label for="Instagram">Link your Instagram: </label>
+                    <label for="IAddress">Link your Instagram: </label>
                     <input type="text" id="IAddress" placeholder="Enter here" class="form-control">
                 </div>
 
@@ -64,30 +64,30 @@
             <h3>Professional Information</h3>
 
             <div class="form-group">
-                <label for="">Enter your Objective: </label>
-                <textarea type="text" placeholder="Enter here" class="form-control"></textarea>
+                <label for="object">Enter your Objective: </label>
+                <textarea type="text" placeholder="Enter here" class="form-control" id="object"></textarea>
             </div>
 
             <div class="form-group mt-3" id="workexp">
-                <label for="work">Tell us about your Work-Experience: </label>
-                <textarea type="text" placeholder="Enter here" class="form-control workfield "></textarea>
+                <label for="workfield">Tell us about your Work-Experience: </label>
+                <textarea type="text" id="workfield" placeholder="Enter here" class="form-control workfield "></textarea>
 
                 <div class="contain text-center mt-3" id="workaddbutton">
-                    <button onclick="addnewField()" class="btn btn-primary btn-sm">Add</button>
+                    <button onclick="addnewField()" class="btn btn-primary btn-sm">Add Another</button>
                 </div>
             </div>
 
             <div class="form-group mt-3" id="AcaQual">
                 <label for="AcaQualification">What about your Academic Qualification?: </label>
-                <textarea type="text" placeholder="Enter here" class="form-control AcaQualification"></textarea>
+                <textarea type="text" id="AcaQualification" placeholder="Enter here" class="form-control AcaQualification"></textarea>
                 
                 <div class="contain text-center mt-1" id="QualButton">
-                    <button onclick="addnewQualificationfield()" class="btn btn-primary btn-sm">Add</button>
+                    <button onclick="addnewQualificationfield()" class="btn btn-primary btn-sm">Add Another</button>
                 </div>
             </div>
         </div>
         <div class="container text-center mt-3">
-            <button class="btn btn-primary btn-lg">Generate CV</button>
+            <button onclick="generateCV()" class="btn btn-primary btn-lg">Generate CV</button>
         </div>
         
     </div>
@@ -100,27 +100,27 @@
                     class="img-fluid my-image">
 
                 <div class="container1 my-3">
-                    <p>Khushal</p>
-                    <p>+919466591660</p>
-                    <p>Qtr no-36B, BSNL Staff Colony, Sector-36A, Chandigarh</p>
+                    <p id="nameT1">Khushal</p>
+                    <p id="contactT">+919466591660</p>
+                    <p id="addressT">Qtr no-36B, BSNL Staff Colony, Sector-36A, Chandigarh</p>
 
                     <hr />
 
-                    <p>Facebook:  <a href="#1" class="links">https://www.facebook.com</a></p>
-                    <p>Instagram:  <a href="#1" class="links">https://www.instagram.com</a></p>
-                    <p>LinkedIn:  <a href="#1" class="links">https://www.LinkedIn.com</a></p>
+                    <p>Email address: <a id="EadressT" href="#1" class="links">https://www.facebook.com</a></p>
+                    <p>Instagram: <a id="InsT" href="#1" class="links">https://www.instagram.com</a></p>
+                    <p>LinkedIn: <a id="LinkT" href="#1" class="links">https://www.LinkedIn.com</a></p>
                 </div>
             </div>
             <div class="col-md-8 py-5">
                 <!-- second column -->
-                <h1 class="text-center" style="font-weight: 900">Khushal</h1>
+                <h1 id="nameT2" class="text-center" style="font-weight: 900">Khushal</h1>
 
                 <div class="card mt-3">
                     <div class="card-header background">
                         <h3>Objective</h3>
                     </div>
                     <div class="card-body">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque deserunt deleniti dolores?
+                        <p id="objectiveT">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque deserunt deleniti dolores?
                             Omnis, et debitis perferendis id at aut nihil. Id beatae, ab sequi aperiam quia hic
                             perferendis! Dolores quae deserunt mollitia atque tempora odio voluptatem, dolorum modi
                             culpa, provident illo et! Eveniet atque molestiae odio sunt eos suscipit natus?</p>
@@ -132,13 +132,9 @@
                         <h3>Work Experience</h3>
                     </div>
                     <div class="card-body">
-                        <ul>
+                        <ul id="workexpT">
                             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, incidunt.</li>
-                        </ul>
-                        <ul>
                             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, incidunt.</li>
-                        </ul>
-                        <ul>
                             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, incidunt.</li>
                         </ul>
                     </div>
@@ -149,19 +145,17 @@
                         <h3>Academic Qualification</h3>
                     </div>
                     <div class="card-body">
-                        <ul>
+                        <ul id="qualT">
                             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, incidunt.</li>
-                        </ul>
-                        <ul>
+                    
                             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, incidunt.</li>
-                        </ul>
-                        <ul>
+                    
                             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, incidunt.</li>
                         </ul>
                     </div>
                 </div>
                 <div class="container mt-3 text-center">
-                    <button class="btn btn-primary btn-lg">Generate CV</button>
+                    <button onclick="printCV()" class="btn btn-primary btn-lg">Generate CV</button>
                 </div>
             </div>
         </div>

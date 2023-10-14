@@ -88,3 +88,10 @@ function printCV()
 {
     window.print();
 }
+
+// window.onload = function() {
+//     document.getElementById("download").addEventListener("click", ()=>{
+//         const invoice = this.document.getElementById("invoice");
+//         html2pdf().from(invoice).save();
+//     })
+// }
